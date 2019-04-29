@@ -44,7 +44,7 @@ ON c.code = e.code  ;
 
 
 -- 6. Select fields
-SELECT c.code, name, region, e.year, fertility_rate, unemployment_rate
+SELECT c.code, c.name, c.region, e.year, p.fertility_rate, e.unemployment_rate
 -- 1. From countries (alias as c)
 FROM countries AS c
 -- 2. Join to populations (as p)
